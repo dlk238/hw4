@@ -1,0 +1,248 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+html {
+	height: 100%;
+	padding: 0px auto;
+	margin:  0px auto;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px  Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	padding: 0px auto;
+	margin:  0px auto;
+	background:#108EAE url(../img/bg.png) repeat-x;
+	
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	
+}
+
+.content {
+  flex: 1 0 auto;
+  background: #ffffff;
+  box-shadow:
+  0px 7px 0px -4px #052f41,  
+  1px 7px 0px -4px #063c53, -1px 7px 0px -4px #063c53,
+  2px 7px 0px -4px #07445e, -2px 7px 0px -4px #07445e,
+  3px 7px 0px -4px #084c69, -3px 7px 0px -4px #084c69,  
+  3px 3px 10px 1px #084d6a, -3px 3px 10px 1px #084d6a; 
+  margin: 0 0 5px 0;
+}
+
+.footer {
+	flex: 0 0 auto;
+	margin: 0 auto;
+    color:#d4e1e9;
+	font: 12px  Arial, sans-serif;
+    height: 25px;
+	line-height: 22px;
+	text-align:center;
+}
+
+.logo_cont {
+	position: relative;
+    height: 175px;
+	border-bottom:1px solid #128aa7;
+}
+.logo {
+    position: absolute;
+	left: 28px;
+    bottom:-5px;
+}
+
+.cont{
+    position: absolute;
+	left: 840px;
+    top:10px;
+	color:#5fa5bb;
+	line-height: 18px;
+}
+
+.countr_tab{
+    position: absolute;
+	left: 630px;
+    top:110px;
+}
+.countr_tab td{
+   	text-align: center;
+	font: 10px  Arial, sans-serif;
+	line-height: 8px;
+}
+
+.countr_tab th{
+   	text-align: center;
+	padding: 0 8px 0 8px;	
+}
+
+.countr_tab a{
+   	text-decoration:underline;
+	color:#5fa5bb;
+}
+
+.countr_tab a:hover{
+   	color:#3c568f;
+}
+
+.img {
+	line-height:0;
+}
+
+div.dropdown {	
+   	height: 28px;
+    padding: 0 0 0 70px; 
+    border-top:1px solid #cacbcb;
+    border-bottom:1px solid #000000;
+	background: #323232; 
+	box-shadow: 0px 3px 3px -1px #000000;	
+}
+
+ul.dropdown li {
+	position: relative;
+	text-align:left;
+}
+
+ul.dropdown-inside { 
+	position: absolute;
+	left: -9999px;
+}
+
+ul.dropdown li.dropdown-top {
+	display: inline;
+	float: left; 
+    padding: 4px  55px 0 5px;
+}
+
+ul.dropdown li.dropdown-top a {
+    padding: 0px 10px 4px; 
+	display: block;
+	color:#ffffff;
+	font: 15px Arial, sans-serif;
+	line-height: 20px;
+}
+
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+	display: block;
+	left: 0;
+}
+
+ ul.dropdown .dropdown-inside {
+	background: #323232;
+	padding: 4px  55px 0 5px;
+	box-shadow: 0px 11px 9px -7px #000000;
+}
+
+ a.dropdown-top span {
+	font: 12px Arial, sans-serif;	
+} 
+
+.main {
+    display: flex;
+    margin-top: 4px;
+    
+	font: 16px  Arial, sans-serif;
+}
+
+.main_left, .main_right{
+	background: #edeef0;
+	padding: 5px 20px 15px 15px;
+	width: 208px;
+	line-height: 28px;
+}
+
+.main_left {
+	order: 1;
+ 	border-right:1px solid #c7cacf;
+}
+.main_center{
+	order: 2;
+    flex: 1;
+    
+}
+
+.main_right {
+    order: 3;
+	border-left:1px solid #c7cacf;
+}
+
+.main_name{
+	text-align:center;
+	font: bold 20px  Arial, sans-serif;
+	line-height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
